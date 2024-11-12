@@ -1,0 +1,327 @@
+{
+  "results": {
+    "m_mmlu_de": {
+      "alias": "m_mmlu_de",
+      "acc,none": 0.5769346809473526,
+      "acc_stderr,none": 0.004290860620658974
+    },
+    "m_mmlu_en": {
+      "alias": "m_mmlu_en",
+      "acc,none": 0.6589983406245286,
+      "acc_stderr,none": 0.0041171603202950335
+    },
+    "m_mmlu_es": {
+      "alias": "m_mmlu_es",
+      "acc,none": 0.6011699415029248,
+      "acc_stderr,none": 0.004240612902655071
+    },
+    "m_mmlu_fr": {
+      "alias": "m_mmlu_fr",
+      "acc,none": 0.590711175616836,
+      "acc_stderr,none": 0.004297666524612417
+    },
+    "m_mmlu_it": {
+      "alias": "m_mmlu_it",
+      "acc,none": 0.5850268187655814,
+      "acc_stderr,none": 0.00428271844168213
+    }
+  },
+  "group_subtasks": {
+    "m_mmlu_de": [],
+    "m_mmlu_en": [],
+    "m_mmlu_es": [],
+    "m_mmlu_fr": [],
+    "m_mmlu_it": []
+  },
+  "configs": {
+    "m_mmlu_de": {
+      "task": "m_mmlu_de",
+      "tag": [
+        "m_mmlu"
+      ],
+      "dataset_path": "alexandrainst/m_mmlu",
+      "dataset_name": "de",
+      "test_split": "test",
+      "fewshot_split": "train",
+      "doc_to_text": "{{instruction.strip()}}\nA. {{option_a}}\nB. {{option_b}}\nC. {{option_c}}\nD. {{option_d}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 0.0
+      }
+    },
+    "m_mmlu_en": {
+      "task": "m_mmlu_en",
+      "tag": [
+        "m_mmlu"
+      ],
+      "dataset_path": "alexandrainst/m_mmlu",
+      "dataset_name": "en",
+      "test_split": "test",
+      "fewshot_split": "train",
+      "doc_to_text": "{{instruction.strip()}}\nA. {{option_a}}\nB. {{option_b}}\nC. {{option_c}}\nD. {{option_d}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 0.0
+      }
+    },
+    "m_mmlu_es": {
+      "task": "m_mmlu_es",
+      "tag": [
+        "m_mmlu"
+      ],
+      "dataset_path": "alexandrainst/m_mmlu",
+      "dataset_name": "es",
+      "test_split": "test",
+      "fewshot_split": "train",
+      "doc_to_text": "{{instruction.strip()}}\nA. {{option_a}}\nB. {{option_b}}\nC. {{option_c}}\nD. {{option_d}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 0.0
+      }
+    },
+    "m_mmlu_fr": {
+      "task": "m_mmlu_fr",
+      "tag": [
+        "m_mmlu"
+      ],
+      "dataset_path": "alexandrainst/m_mmlu",
+      "dataset_name": "fr",
+      "test_split": "test",
+      "fewshot_split": "train",
+      "doc_to_text": "{{instruction.strip()}}\nA. {{option_a}}\nB. {{option_b}}\nC. {{option_c}}\nD. {{option_d}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 0.0
+      }
+    },
+    "m_mmlu_it": {
+      "task": "m_mmlu_it",
+      "tag": [
+        "m_mmlu"
+      ],
+      "dataset_path": "alexandrainst/m_mmlu",
+      "dataset_name": "it",
+      "test_split": "test",
+      "fewshot_split": "train",
+      "doc_to_text": "{{instruction.strip()}}\nA. {{option_a}}\nB. {{option_b}}\nC. {{option_c}}\nD. {{option_d}}\nAnswer:",
+      "doc_to_target": "answer",
+      "doc_to_choice": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "fewshot_config": {
+        "sampler": "first_n"
+      },
+      "num_fewshot": 5,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 0.0
+      }
+    }
+  },
+  "versions": {
+    "m_mmlu_de": 0.0,
+    "m_mmlu_en": 0.0,
+    "m_mmlu_es": 0.0,
+    "m_mmlu_fr": 0.0,
+    "m_mmlu_it": 0.0
+  },
+  "n-shot": {
+    "m_mmlu_de": 5,
+    "m_mmlu_en": 5,
+    "m_mmlu_es": 5,
+    "m_mmlu_fr": 5,
+    "m_mmlu_it": 5
+  },
+  "higher_is_better": {
+    "m_mmlu_de": {
+      "acc": true
+    },
+    "m_mmlu_en": {
+      "acc": true
+    },
+    "m_mmlu_es": {
+      "acc": true
+    },
+    "m_mmlu_fr": {
+      "acc": true
+    },
+    "m_mmlu_it": {
+      "acc": true
+    }
+  },
+  "n-samples": {
+    "m_mmlu_it": {
+      "original": 13237,
+      "effective": 13237
+    },
+    "m_mmlu_fr": {
+      "original": 13091,
+      "effective": 13091
+    },
+    "m_mmlu_es": {
+      "original": 13334,
+      "effective": 13334
+    },
+    "m_mmlu_en": {
+      "original": 13258,
+      "effective": 13258
+    },
+    "m_mmlu_de": {
+      "original": 13258,
+      "effective": 13258
+    }
+  },
+  "config": {
+    "model": "hf",
+    "model_args": "pretrained=meta-llama/Meta-Llama-3.1-8B-Instruct,trust_remote_code=True",
+    "batch_size": "1",
+    "batch_sizes": [],
+    "device": null,
+    "use_cache": "./output/cache/meta-llama/Meta-Llama-3.1-8B-Instruct/MMLU",
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null,
+    "random_seed": 0,
+    "numpy_seed": 1234,
+    "torch_seed": 1234,
+    "fewshot_seed": 1234
+  },
+  "git_hash": null,
+  "date": 1721772623.4352503,
+  "pretty_env_info": "PyTorch version: 2.3.1+cu121\nIs debug build: False\nCUDA used to build PyTorch: 12.1\nROCM used to build PyTorch: N/A\n\nOS: Ubuntu 22.04.4 LTS (x86_64)\nGCC version: (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0\nClang version: Could not collect\nCMake version: Could not collect\nLibc version: glibc-2.35\n\nPython version: 3.10.12 (main, Mar 22 2024, 16:50:05) [GCC 11.4.0] (64-bit runtime)\nPython platform: Linux-6.5.0-44-generic-x86_64-with-glibc2.35\nIs CUDA available: True\nCUDA runtime version: Could not collect\nCUDA_MODULE_LOADING set to: LAZY\nGPU models and configuration: \nGPU 0: NVIDIA H100 PCIe\nGPU 1: NVIDIA H100 PCIe\nGPU 2: NVIDIA H100 PCIe\nGPU 3: NVIDIA H100 PCIe\n\nNvidia driver version: 535.183.06\ncuDNN version: Could not collect\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\n\nCPU:\nArchitecture:                       x86_64\nCPU op-mode(s):                     32-bit, 64-bit\nAddress sizes:                      52 bits physical, 57 bits virtual\nByte Order:                         Little Endian\nCPU(s):                             124\nOn-line CPU(s) list:                0-123\nVendor ID:                          AuthenticAMD\nModel name:                         AMD EPYC 9554 64-Core Processor\nCPU family:                         25\nModel:                              17\nThread(s) per core:                 1\nCore(s) per socket:                 62\nSocket(s):                          2\nStepping:                           1\nBogoMIPS:                           6190.69\nFlags:                              fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw perfctr_core invpcid_single ssbd ibrs ibpb stibp ibrs_enhanced vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx512_bf16 clzero xsaveerptr wbnoinvd arat npt lbrv nrip_save tsc_scale vmcb_clean pausefilter pfthreshold v_vmsave_vmload vgif vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq la57 rdpid fsrm flush_l1d arch_capabilities\nVirtualization:                     AMD-V\nHypervisor vendor:                  KVM\nVirtualization type:                full\nL1d cache:                          7.8 MiB (124 instances)\nL1i cache:                          7.8 MiB (124 instances)\nL2 cache:                           62 MiB (124 instances)\nL3 cache:                           1.9 GiB (124 instances)\nNUMA node(s):                       2\nNUMA node0 CPU(s):                  0-61\nNUMA node1 CPU(s):                  62-123\nVulnerability Gather data sampling: Not affected\nVulnerability Itlb multihit:        Not affected\nVulnerability L1tf:                 Not affected\nVulnerability Mds:                  Not affected\nVulnerability Meltdown:             Not affected\nVulnerability Mmio stale data:      Not affected\nVulnerability Retbleed:             Not affected\nVulnerability Spec rstack overflow: Vulnerable: Safe RET, no microcode\nVulnerability Spec store bypass:    Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:           Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:           Mitigation; Enhanced / Automatic IBRS; IBPB conditional; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                Not affected\nVulnerability Tsx async abort:      Not affected\n\nVersions of relevant libraries:\n[pip3] numpy==1.26.4\n[pip3] torch==2.3.1\n[pip3] triton==2.3.1\n[conda] Could not collect",
+  "transformers_version": "4.43.1",
+  "upper_git_hash": null,
+  "tokenizer_pad_token": [
+    "<|eot_id|>",
+    "128009"
+  ],
+  "tokenizer_eos_token": [
+    "<|eot_id|>",
+    "128009"
+  ],
+  "tokenizer_bos_token": [
+    "<|begin_of_text|>",
+    "128000"
+  ],
+  "eot_token_id": 128009,
+  "max_length": 131072,
+  "task_hashes": {},
+  "model_source": "hf",
+  "model_name": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "model_name_sanitized": "meta-llama__Meta-Llama-3.1-8B-Instruct",
+  "system_instruction": null,
+  "system_instruction_sha": null,
+  "fewshot_as_multiturn": false,
+  "chat_template": null,
+  "chat_template_sha": null,
+  "start_time": 5437.239649284,
+  "end_time": 5528.230504648,
+  "total_evaluation_time_seconds": "90.9908553639998"
+}
