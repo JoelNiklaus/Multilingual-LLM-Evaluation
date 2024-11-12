@@ -32,7 +32,7 @@ having ~700M parameters.
 ![](results/model_performance_languages_2b.png)
 ![](results/model_performance_tasks_2b.png)
 
-### ~ 3B Parameters
+### 3-4B Parameters
 
 There is a clear progression from flan-t5-xl to Llama-3.2-3B to Phi-3.5-mini with the microsoft model taking the top
 spot on all languages and tasks.
